@@ -1,13 +1,15 @@
 
 const express =require("express");
+// var bodyParser = require('body-parser')
 const { connection } =require("./config/db");
 const {usersRouter}=require("./routes/users.routes")
 require('dotenv').config()
-
-// app.use(express.json())
+//app.use(bodyParser.json())
+var app = express()
+app.use(express.json())
 
 var cors = require('cors')
-var app = express()
+
  
 app.use(cors())
 
