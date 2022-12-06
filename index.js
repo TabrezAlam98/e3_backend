@@ -4,7 +4,7 @@ const { connection } =require("./config/db");
 const {usersRouter}=require("./routes/users.routes")
 require('dotenv').config()
 
-app.use(express.json())
+// app.use(express.json())
 
 var cors = require('cors')
 var app = express()
